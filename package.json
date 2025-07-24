@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "cd paymenow-dapp/frontend && npm run dev"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.8",
+    "@tanstack/react-query": "^5.83.0",
+    "viem": "^2.33.0",
+    "wagmi": "^2.16.0"
+  }
+}
