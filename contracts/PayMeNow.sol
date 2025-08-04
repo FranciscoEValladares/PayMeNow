@@ -19,11 +19,3 @@ contract PayMeNow {
         payable(owner).transfer(address(this).balance);
     }
 }
-
-    // Accept ETH payments and emit an event
-    function pay(address payable recipient, string calldata message) external payable {
-        require(msg.value > 0, "Amount must be greater than zero");
-        require(recipient != address(0), "Recipient cannot be zero address");
-
-        recipient.transfer(msg.value);
-        emit PaymentReceived(msg.sender, recipient, msg.value, message);
